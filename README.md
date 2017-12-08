@@ -26,7 +26,12 @@ TELEGRAM_BOT: 'your_token'
 docker-compose up -d 
 ```
 
+#### How to use
 
+- Use `check` command with args in channel
+
+
+<img src="demo.png">
 
 #### Author
 
