@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: checkcoin-bot
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: checkcoin-bot
+        name: checkcoin-bot
+    spec:
+      containers:
+      - name: name
+        image: saphi/checkcoin-bot
