@@ -17,7 +17,9 @@ def check_coin(bot, update, args):
         try:
             for coin in data:
                 if arg.upper() == coin['symbol']:
-                    response += "Name: {}\nRate: {}\n".format(coin['name'], coin['price_usd'])
+                    response += "Name: {}\nRate: {}\nBTC Rate: {}\nChange(1h): {}\nChange(24h): {}\n".format(
+                        coin['name'],coin['price_usd'], coin['price_btc'],
+                        coin['percent_change_1h'], coin['percent_change_24h'])
         except:
             continue
     
