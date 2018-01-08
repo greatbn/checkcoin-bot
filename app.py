@@ -10,7 +10,7 @@ updater = Updater(token=TOKEN)
 dispatcher = updater.dispatcher
 
 def check_coin(bot, update, args): 
-    data = requests.get('https://api.coinmarketcap.com/v1/ticker/')
+    data = requests.get('https://api.coinmarketcap.com/v1/ticker/?limit=2000')
     data = data.json()
     response = ""
     for arg in args:
